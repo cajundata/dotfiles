@@ -1,0 +1,23 @@
+{
+  "name": "cajun-data-theme",
+  "displayName": "Cajun Data",
+  "description": "Cajun Data brand color theme (cajundata.com tokens), matching the WezTerm and Starship configs",
+  "version": "1.0.0",
+  "publisher": "cajundata",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Cajun Data Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cajun-data-color-theme.json"
+      }
+    ]
+  }
+}
