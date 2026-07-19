@@ -1,0 +1,78 @@
+# ~/dotfiles/starship/starship.toml
+# Solarized Dark palette aligned with WezTerm / VS Code / Neovim / PSReadLine
+
+palette = "solarized_dark"
+
+[palettes.solarized_dark]
+base03  = "#002b36"
+base02  = "#073642"
+base01  = "#586e75"
+base00  = "#657b83"
+base0   = "#839496"
+base1   = "#93a1a1"
+base2   = "#eee8d5"
+base3   = "#fdf6e3"
+yellow  = "#b58900"
+orange  = "#cb4b16"
+red     = "#dc322f"
+magenta = "#d33682"
+violet  = "#6c71c4"
+blue    = "#268bd2"
+cyan    = "#2aa198"
+green   = "#859900"
+
+format = """
+$username\
+$directory\
+$git_branch\
+$git_status\
+$python\
+$golang\
+$nodejs\
+$cmd_duration\
+$line_break\
+$character"""
+
+[username]
+style_user = "base01"
+format = "[$user]($style_user) "
+show_always = false
+
+[directory]
+style = "blue bold"
+format = "[$path]($style)[$read_only](red) "
+truncation_length = 3
+truncate_to_repo = true
+
+[git_branch]
+symbol = " "
+style = "green"
+format = "[$symbol$branch]($style) "
+
+[git_status]
+style = "yellow"
+format = "([$all_status$ahead_behind]($style) )"
+
+[python]
+symbol = " "
+style = "yellow"
+format = "[$symbol$version( \\($virtualenv\\))]($style) "
+
+[golang]
+symbol = " "
+style = "cyan"
+format = "[$symbol$version]($style) "
+
+[nodejs]
+symbol = " "
+style = "green"
+format = "[$symbol$version]($style) "
+
+[cmd_duration]
+min_time = 2000
+style = "base01"
+format = "[$duration]($style) "
+
+[character]
+success_symbol = "[❯](green)"
+error_symbol = "[❯](red)"
