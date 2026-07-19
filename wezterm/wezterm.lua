@@ -25,7 +25,7 @@ config.color_scheme = 'Cajun Data'
 -- config.color_scheme = 'Solarized (dark) (terminal.sexy)'
 
 config.font = wezterm.font 'JetBrainsMono Nerd Font'
-config.font_size = 13.0
+config.font_size = 15.0
 
 config.leader = { key = 'a', mods = 'CTRL', timeout_milliseconds = 3000 }
 
