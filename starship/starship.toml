@@ -1,7 +1,25 @@
 # ~/dotfiles/starship/starship.toml
-# Solarized Dark palette aligned with WezTerm / VS Code / Neovim / PSReadLine
+# Cajun Data palette (cajundata.com brand tokens); solarized_dark kept for switching
 
-palette = "solarized_dark"
+palette = "cajun_data"
+
+[palettes.cajun_data]
+base03  = "#0b0c0e"
+base02  = "#141619"
+base01  = "#5b656c"
+base00  = "#7f8a91"
+base0   = "#9aa4ab"
+base1   = "#c9d3d8"
+base2   = "#eef1f3"
+base3   = "#ffffff"
+yellow  = "#fbbf24"
+orange  = "#fb923c"
+red     = "#f87171"
+magenta = "#f472b6"
+violet  = "#a78bfa"
+blue    = "#38bdf8"
+cyan    = "#22d3ee"
+green   = "#34d399"
 
 [palettes.solarized_dark]
 base03  = "#002b36"
